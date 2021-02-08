@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  GtSdkDemo
+//
+//  Created by ak on 2020/03/20.
+//  Copyright © 2019 Gexin Interactive (Beijing) Network Technology Co.,LTD. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AppDelegate.h"
+#import <GTSDK/GeTuiSdk.h>
+#import "HomeViewController.h"
+#import "UIView+Gt.h"
+#import "Utils.h"
+// 无效或空值的字符串
+#define F_IsStringValue_GtEmpty(msg) (![msg isKindOfClass:[NSString class]] || msg.length <= 0 ? YES : NO)
+#define GTSdkStateNotification @"GtSdkStateChange"
+
+// GTSDK 配置信息
+#define kGtAppId @"xXmjbbab3b5F1m7wAYZoG2"
+#define kGtAppKey @"BZF4dANEYr8dwLhj6lRfx2"
+#define kGtAppSecret @"yXRS5zRxDt8WhMW8DD8W05"
+
+#endif /* PrefixHeader_pch */

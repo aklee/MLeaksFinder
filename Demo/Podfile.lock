@@ -1,0 +1,28 @@
+PODS:
+  - FBRetainCycleDetector (0.1.4)
+  - GTExtensionSDK (2.2.4)
+  - GTSDK (2.5.3.0)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+
+DEPENDENCIES:
+  - GTExtensionSDK
+  - GTSDK
+  - MLeaksFinder
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBRetainCycleDetector
+    - GTExtensionSDK
+    - GTSDK
+    - MLeaksFinder
+
+SPEC CHECKSUMS:
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  GTExtensionSDK: e8a788b267b25251d764349c28a80e3320f94af6
+  GTSDK: 862e22a41bc305093e81486f22e84c6facdcae0d
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+
+PODFILE CHECKSUM: d34e43a2f817cb62575c6b6fa53249b2dcc1b41c
+
+COCOAPODS: 1.10.0

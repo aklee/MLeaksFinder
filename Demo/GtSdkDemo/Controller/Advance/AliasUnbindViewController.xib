@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AliasUnbindViewController">
+            <connections>
+                <outlet property="ensureUnBindAliasBtn" destination="4QX-W3-6Yh" id="ZEV-6W-76o"/>
+                <outlet property="unbindAliasTextField" destination="v2X-xH-gdX" id="93v-1Q-HU0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unbindAlias" translatesAutoresizingMaskIntoConstraints="NO" id="fwj-xs-s6p">
+                    <rect key="frame" x="10" y="54" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="00b-YM-G44"/>
+                        <constraint firstAttribute="width" constant="48" id="FCa-Mc-DtD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对已安装某应用的用户取别名来标识，对该用户消息推送时，可用此别名来推送。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErP-zR-myl">
+                    <rect key="frame" x="68" y="54" width="331" height="48"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgX-Gi-Dxc">
+                    <rect key="frame" x="0.0" y="117" width="414" height="2"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="duj-RA-jEU"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入别名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v2X-xH-gdX">
+                    <rect key="frame" x="10" y="134" width="394" height="40"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="b6O-dW-WH7"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入已绑定过的别名，将已绑定的别名解绑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFm-No-uU2">
+                    <rect key="frame" x="10" y="184" width="394" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BSZ-9a-g7t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QX-W3-6Yh">
+                    <rect key="frame" x="20" y="230" width="374" height="48"/>
+                    <color key="backgroundColor" red="0.0039215686269999999" green="0.50365262960000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="niZ-3k-4jq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                    <state key="normal" title="确认解绑">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="ensureUnBindAliasBtn:" destination="-1" eventType="touchUpInside" id="sgx-9y-4fM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="zgX-Gi-Dxc" secondAttribute="trailing" id="2vM-gF-KTB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="v2X-xH-gdX" secondAttribute="trailing" constant="10" id="5YQ-5d-bp3"/>
+                <constraint firstItem="ErP-zR-myl" firstAttribute="leading" secondItem="fwj-xs-s6p" secondAttribute="trailing" constant="10" id="F6r-C5-M3u"/>
+                <constraint firstItem="4QX-W3-6Yh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="O9Q-Od-gXK"/>
+                <constraint firstItem="zgX-Gi-Dxc" firstAttribute="top" secondItem="ErP-zR-myl" secondAttribute="bottom" constant="15" id="PqP-fs-ppd"/>
+                <constraint firstItem="4QX-W3-6Yh" firstAttribute="top" secondItem="lFm-No-uU2" secondAttribute="bottom" constant="25" id="QnI-Zh-Zzl"/>
+                <constraint firstItem="lFm-No-uU2" firstAttribute="top" secondItem="v2X-xH-gdX" secondAttribute="bottom" constant="10" id="Rup-Yc-hCP"/>
+                <constraint firstItem="ErP-zR-myl" firstAttribute="bottom" secondItem="fwj-xs-s6p" secondAttribute="bottom" id="UEB-dt-5PG"/>
+                <constraint firstItem="zgX-Gi-Dxc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Wc7-fh-dcg"/>
+                <constraint firstItem="fwj-xs-s6p" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="WfK-Rq-Lq8"/>
+                <constraint firstItem="v2X-xH-gdX" firstAttribute="top" secondItem="zgX-Gi-Dxc" secondAttribute="bottom" constant="15" id="YKZ-s2-VWh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ErP-zR-myl" secondAttribute="trailing" constant="15" id="Z2N-ru-Ad7"/>
+                <constraint firstItem="fwj-xs-s6p" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="cf1-UX-iBs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="lFm-No-uU2" secondAttribute="trailing" constant="10" id="eMW-Gj-Wua"/>
+                <constraint firstItem="ErP-zR-myl" firstAttribute="top" secondItem="fwj-xs-s6p" secondAttribute="top" id="hP2-wM-Pat"/>
+                <constraint firstItem="4QX-W3-6Yh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="hZS-gU-wlK"/>
+                <constraint firstItem="lFm-No-uU2" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="miQ-Ta-7E0"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4QX-W3-6Yh" secondAttribute="trailing" constant="20" id="pNp-hw-T2u"/>
+                <constraint firstItem="v2X-xH-gdX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="yxy-k2-l5s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unbindAlias" width="20" height="20"/>
+    </resources>
+</document>

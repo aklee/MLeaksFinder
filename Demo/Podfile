@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'GtSdkDemo' do
+
+	platform :ios, "8.0"
+
+  	pod 'GTSDK'
+	pod 'MLeaksFinder'
+end
+
+target 'NotificationService' do
+
+	platform :ios, "10.0"
+
+  	pod 'GTExtensionSDK'
+end
